@@ -226,6 +226,31 @@
         font-size: 0.86rem;
         margin-bottom: 0.6rem;
       }
+
+      .photo-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 0.9rem;
+      }
+
+      .photo {
+        margin: 0;
+      }
+
+      .photo img {
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+        border-radius: 12px;
+        border: 1px solid var(--border);
+      }
+
+      .photo figcaption {
+        margin-top: 0.35rem;
+        color: var(--muted);
+        font-size: 0.88rem;
+      }
+
     </style>
   </head>
   <body>
@@ -270,6 +295,25 @@
             <h3>Holiday Festival of Voices</h3>
             <p>Keeter Auditorium • Seasonal favorites with guest instrumentalists.</p>
           </article>
+        </div>
+      </section>
+
+
+      <section class="card" aria-labelledby="photos-heading">
+        <h2 id="photos-heading">Photos from CCCS</h2>
+        <div class="photo-grid">
+          <figure class="photo">
+            <img src="https://images.unsplash.com/photo-1460723237483-7a6dc9d0b212?auto=format&fit=crop&w=1000&q=80" alt="Choir members singing together during a concert." loading="lazy" />
+            <figcaption>Spring performance highlights.</figcaption>
+          </figure>
+          <figure class="photo">
+            <img src="https://images.unsplash.com/photo-1503095396549-807759245b35?auto=format&fit=crop&w=1000&q=80" alt="Conductor leading singers during rehearsal." loading="lazy" />
+            <figcaption>Weekly rehearsal with our director.</figcaption>
+          </figure>
+          <figure class="photo">
+            <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1000&q=80" alt="Audience applauding in an auditorium after a choir concert." loading="lazy" />
+            <figcaption>Community support at each concert.</figcaption>
+          </figure>
         </div>
       </section>
 
